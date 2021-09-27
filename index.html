@@ -12,14 +12,14 @@
     <div class="drag-container">
         <ul class="drag-list">
             <!-- backlog column -->
-            <li class="drag-column backlog-column">
+            <li class="drag-column backlog-column" onDrop="drop(event)"
+            ondragover="allowDrop(event)" ondragenter="dragEnter(0)" ondragleave="dragLeave(0)">
                 <span class="header">
                     <h1>Backlog</h1>
                 </span>
                 <!-- backlog content -->
                 <div id="backlog-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="backlog-list" onDrop="drop(event)"
-                    ondragover="allowDrop(event)" ondragenter="dragEnter(0)" ondragleave="dragLeave(0)">
+                    <ul class="drag-itemlist" id="backlog-list" >
                         
                     </ul>
                 </div>
@@ -38,14 +38,14 @@
                 </div>
             </li>
             <!-- Progress column -->
-            <li class="drag-column progress-column">
+            <li class="drag-column progress-column" onDrop="drop(event)"
+            ondragover="allowDrop(event)" ondragenter="dragEnter(1)" ondragleave="dragLeave(1)">
                 <span class="header">
                     <h1>Progress</h1>
                 </span>
                 <!-- progress content -->
                 <div id="progress-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="progress-list" onDrop="drop(event)"
-                    ondragover="allowDrop(event)" ondragenter="dragEnter(1)" ondragleave="dragLeave(1)">
+                    <ul class="drag-itemlist" id="progress-list" >
                        
                     </ul>
                 </div>
@@ -64,15 +64,15 @@
                 </div>
             </li>
             <!-- complete column -->
-            <li class="drag-column complete-column">
+            <li class="drag-column complete-column" onDrop="drop(event)"
+            ondragover="allowDrop(event)" ondragenter="dragEnter(2)" ondragleave="dragLeave(2)">
                 <span class="header">
                     <h1>Complete</h1>
                 </span>
                 <!-- complete content -->
                 <div id="complete-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="complete-list" onDrop="drop(event)"
-                    ondragover="allowDrop(event)" ondragenter="dragEnter(2)" ondragleave="dragLeave(2)">
-                        <
+                    <ul class="drag-itemlist" id="complete-list" >
+                        
                     </ul>
                 </div>
                 <!-- button group -->
@@ -90,14 +90,14 @@
                 </div>
             </li>
             <!-- on-hold column -->
-            <li class="drag-column on-hold-column">
+            <li class="drag-column on-hold-column" onDrop="drop(event)"
+            ondragover="allowDrop(event)" ondragenter="dragEnter(3)" ondragleave="dragLeave(3)">
                 <span class="header">
                     <h1>On-Hold</h1>
                 </span>
                 <!-- on-hold content -->
                 <div id="on-hold-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="on-hold-list" onDrop="drop(event)"
-                    ondragover="allowDrop(event)" ondragenter="dragEnter(3)" ondragleave="dragLeave(3)">
+                    <ul class="drag-itemlist" id="on-hold-list" >
                        
                     </ul>
                 </div>

@@ -18,7 +18,8 @@
                 </span>
                 <!-- backlog content -->
                 <div id="backlog-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="backlog-list">
+                    <ul class="drag-itemlist" id="backlog-list" onDrop="drop(event)"
+                    ondragover="allowDrop(event)" ondragenter="dragEnter(0)" ondragleave="dragLeave(0)">
                         
                     </ul>
                 </div>
@@ -43,7 +44,8 @@
                 </span>
                 <!-- progress content -->
                 <div id="progress-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="progress-list">
+                    <ul class="drag-itemlist" id="progress-list" onDrop="drop(event)"
+                    ondragover="allowDrop(event)" ondragenter="dragEnter(1)" ondragleave="dragLeave(1)">
                        
                     </ul>
                 </div>
@@ -68,7 +70,8 @@
                 </span>
                 <!-- complete content -->
                 <div id="complete-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="complete-list">
+                    <ul class="drag-itemlist" id="complete-list" onDrop="drop(event)"
+                    ondragover="allowDrop(event)" ondragenter="dragEnter(2)" ondragleave="dragLeave(2)">
                         <
                     </ul>
                 </div>
@@ -93,7 +96,8 @@
                 </span>
                 <!-- on-hold content -->
                 <div id="on-hold-content" class="custom-scroll">
-                    <ul class="drag-itemlist" id="on-hold-list">
+                    <ul class="drag-itemlist" id="on-hold-list" onDrop="drop(event)"
+                    ondragover="allowDrop(event)" ondragenter="dragEnter(3)" ondragleave="dragLeave(3)">
                        
                     </ul>
                 </div>

@@ -119,6 +119,9 @@ function rebuildArrays() {
   updateDOM();
 }
 
+// god like
+
+
 // when starts dragging
 function drag(e) {
   draggedItem = e.target;
